@@ -24,9 +24,9 @@ class BinarnoStabloZaPretrazivanje {
 			return cvor;
 
 		if (value > cvor->value)
-			return rekurzija_ReciklirajStablo(cvor->desnoDijete, value);
+			return rekurzija_Trazi(cvor->desnoDijete, value);
 		else
-			return rekurzija_ReciklirajStablo(cvor->lijevoDijete, value);
+			return rekurzija_Trazi(cvor->lijevoDijete, value);
 	}
 
 	bool rekurzija_Dodaj(BSCvor<Tip>* &cvor, Tip value) {
