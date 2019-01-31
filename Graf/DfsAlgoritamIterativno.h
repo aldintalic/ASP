@@ -32,7 +32,7 @@ private:
 
 				posjeceni->dodaj(v);
 
-				for (int i = M->velicina; i >= 0; i--) {
+				for (int i = M->velicina-1; i >= 0; i--) {
 					if (M->isSusjed(v, i)){
 						if (!posjeceni->sadrzi(i))
 							stek.dodaj(i);
